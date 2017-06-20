@@ -11,8 +11,12 @@ class App < Sinatra::Base
     @email = params[:email]
     @city = params[:city]
 
+  #  if !@full_name.match((/w+ w+ w+ w+|w+ w+ w+|w+ w+/))
+  #    redirect to ('/e?error=email')
+  #  end
+
     if !@email.match(/.+@.+/)
-      redirect to('/?error=email')
+      redirect to('/e?error=email')
     end
 
     erb :subscribe
