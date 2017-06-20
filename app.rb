@@ -3,6 +3,10 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   get '/' do
     @error = params['error']
+    erb :splash
+  end
+
+  get '/home' do
     erb :home
   end
 
@@ -39,13 +43,17 @@ class App < Sinatra::Base
     erb :youtube
   end
 
+
   get '/rainbow' do
     erb :rainbow
+
+  get '/team' do
+    erb :team
   end
 
   get '/schedule' do
     @today = [
-      ['7:00am', 'Wake up'],
+      ['7:00am', 'Eat a croissant'],
       ['8:00am', 'Work Out'],
       ['9:00am', 'Product Meeting'],
       ['11:00am', 'Ping Pong Break'],
@@ -62,6 +70,16 @@ class App < Sinatra::Base
       ['1:00pm', 'Lunch'],
       ['3:00pm', 'Coffee Time'],
       ['6:30pm', 'Meetup Presentation'],
+    ]
+
+      @day_after = [
+      ['8:00am', 'Wake up'],
+      ['8:30am', 'Party'],
+      ['9:00am', 'Inbox One Thousand'],
+      ['11:00am', 'Pong Break'],
+      ['1:00pm', 'Lunch'],
+      ['3:00pm', 'Coffee all in my belly'],
+      ['6:30pm', 'Meetup Prezi'],
     ]
 
     # TODO: add a third day's schedule (@day_after)

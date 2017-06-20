@@ -2,16 +2,23 @@
  * TODO: add custom styling
  */
 
-.column {float: left; width: 50%;
 
+
+
+body {
+background-color: blue;
+/*background-image: url(/images/AndrewYang.png);*/
 }
+
 
 .column2 {float: right; width: 50%;
 }
+
 #myIcon {
 	max-height: 50px;
 	max-width: 50px;
 }
+
 
 HR {
 	display: block;
@@ -82,3 +89,14 @@ header{
 header{display:inline-block; font-size:12px;}
 span{padding-left:20px;}
 a{color:#336699;}
+
+.team_member {
+	height: 50px;
+	width: 50px;
+}
+
+.padding {
+	padding:30px;
+}
+
+
