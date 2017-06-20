@@ -4,18 +4,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup Sprint</title>
-    <link rel="icon" href="User.png" type="image/x-icon"/>
+    <link rel="icon" href="images/User.png" type="image/x-icon"/>
     <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-responsive.css">
+
   </head>
   <body>
+<<<<<<< HEAD
+
+=======
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+           <!--  <span id="myIcon"> <img alt="Brand" src="User.png"></span> -->
+          </a>
+        </div>
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="/home">Home</a></li>
+            <li role="presentation"><a href="/schedule">Schedule</a></li>
+            <li role="presentation"><a href="/youtube">Youtube</a></li>
+            <li role="presentation"><a href="/reddit">Reddit</a></li>
+            <li role="presentation"><a href="/team">Team</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
     
+>>>>>>> dc424df1d588edd69713bc64ca9ef2891a591eac
     <!--[if lt IE 8]>
       <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <%= yield %>
 
-    <p>This is a footer></p>
+    <br>
+    <br>
+    <br>
+    <p class="footer">©<script>document.write(new Date().getFullYear())</script> VFA Flatiron Pros. Thanks to Corinne, Genevieve, Mihir, Josh, and Paul for making the website!</p>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
   </body>
 </html>
