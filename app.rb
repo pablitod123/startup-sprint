@@ -6,6 +6,10 @@ class App < Sinatra::Base
     erb :home
   end
 
+  get '/home' do
+    redirect to'/'
+  end
+
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
@@ -33,6 +37,10 @@ class App < Sinatra::Base
 
   get '/youtube' do
     erb :youtube
+  end
+
+  get '/rainbow' do
+    erb :rainbow
   end
 
   get '/schedule' do
