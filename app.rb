@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   get '/' do
     @error = params['error']
-    erb :home
+    erb :splash
   end
 
   post '/subscribe' do
@@ -41,7 +41,7 @@ class App < Sinatra::Base
 
   get '/schedule' do
     @today = [
-      ['7:00am', 'Wake up'],
+      ['7:00am', 'Eat a croissant'],
       ['8:00am', 'Work Out'],
       ['9:00am', 'Product Meeting'],
       ['11:00am', 'Ping Pong Break'],

@@ -4,6 +4,16 @@
 
 
 
+
+body {
+background-color: blue;
+/*background-image: url(/images/AndrewYang.png);*/
+}
+
+
+.column2 {float: right; width: 50%;
+}
+
 #myIcon {
 	max-height: 50px;
 	max-width: 50px;
@@ -17,3 +27,4 @@
 .padding {
 	padding:30px;
 }
+
