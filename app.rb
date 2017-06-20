@@ -43,7 +43,6 @@ class App < Sinatra::Base
     erb :youtube
   end
 
-
   get '/rainbow' do
     erb :rainbow
 
@@ -87,3 +86,4 @@ class App < Sinatra::Base
     erb :schedule
   end
 end
+end 
