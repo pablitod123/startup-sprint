@@ -6,6 +6,10 @@ class App < Sinatra::Base
     erb :splash
   end
 
+  get '/home' do
+    erb :home
+  end
+
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
