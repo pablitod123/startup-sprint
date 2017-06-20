@@ -12,9 +12,9 @@ class App < Sinatra::Base
     @city = params[:city]
 
   #  if !@full_name.match((/w+ w+ w+ w+|w+ w+ w+|w+ w+/))
-  #    redirect to ('/e?error=email')
+  #    redirect to('/e?error=full_name')
   #  end
-
+   #
     if !@email.match(/.+@.+/)
       redirect to('/e?error=email')
     end

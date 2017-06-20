@@ -5,9 +5,11 @@
 <% if @error == 'email' %>
   <p style="color: red;">Please enter a valid email</p>
 <% end %>
- <%# if @error == 'full_name' %>
-  <!-- <p style-"color: red">Please enter a first and last name</p>
-<% end %> -->
+
+# <% if @error == 'full_name' %>
+#   <p style="color: red;">Please enter a first and last name</p>
+# <% end %>
+
 <form method=POST action="/subscribe">
   <label for="full-name">Full Name</label>
   <input type="text" id="full-name" name="full_name" required placeholder="Enter your full name">
