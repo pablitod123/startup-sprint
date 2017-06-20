@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<body>
+const alphabet = ['p', 'e', 'c']
+
+// keep track of index outside of the event handler
+var index = 0
+
+// unattached event handler
+function onKeyDownHandler(e) {
+  const key = parseInt(e.detail || e.which)
+
+  if (key === alphabet[index]) {
+    index++
+
+    if (index === alphabet.length - 1) {
+      alert("Feed yo'self!")
+      display <img src="/images/AndrewYang.png"/>
+      index = 0
+    }
+  } else {
+    index = 0
+  }
+}
+</body>
+
+</html>
