@@ -45,6 +45,7 @@ class App < Sinatra::Base
 
   get '/rainbow' do
     erb :rainbow
+ end
 
   get '/team' do
     erb :team
@@ -86,4 +87,4 @@ class App < Sinatra::Base
     erb :schedule
   end
 end
-end 
+
