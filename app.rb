@@ -60,6 +60,16 @@ class App < Sinatra::Base
       ['6:30pm', 'Meetup Presentation'],
     ]
 
+      @day_after = [
+      ['8:00am', 'Wake up'],
+      ['8:30am', 'Party'],
+      ['9:00am', 'Inbox One Thousand'],
+      ['11:00am', 'Pong Break'],
+      ['1:00pm', 'Lunch'],
+      ['3:00pm', 'Coffee all in my belly'],
+      ['6:30pm', 'Meetup Prezi'],
+    ]
+
     # TODO: add a third day's schedule (@day_after)
 
     erb :schedule

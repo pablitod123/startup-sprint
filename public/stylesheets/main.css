@@ -2,21 +2,18 @@
  * TODO: add custom styling
  */
 
-.column {float: left; width: 50%;
 
-}
+
 
 body {
 background-color: blue;
 /*background-image: url(/images/AndrewYang.png);*/
 }
 
-body {
-/*opacity: 0.5;*/
-}
 
 .column2 {float: right; width: 50%;
 }
+
 #myIcon {
 	max-height: 50px;
 	max-width: 50px;
