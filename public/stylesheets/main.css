@@ -10,3 +10,12 @@
 	max-height: 50px;
 	max-width: 50px;
 }
+
+.team_member {
+	height: 50px;
+	width: 50px;
+}
+
+.padding {
+	padding:30px;
+}
